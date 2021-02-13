@@ -2,4 +2,4 @@
 
 A no-frills Lorem Ipsum resource
 
-[supersimpleloremipsum.com/](http://supersimpleloremipsum.com/)
+[supersimpleloremipsum.com/](https://supersimpleloremipsum.com/)
