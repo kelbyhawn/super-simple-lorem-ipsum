@@ -21,7 +21,7 @@ p {
 }
 
 a {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.66);
   text-decoration: none;
   -webkit-transition: color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out;
@@ -33,7 +33,7 @@ a:hover {
 
 footer {
   font-size: 0.75em;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.66);
   margin-top: 4em;
 }
 
