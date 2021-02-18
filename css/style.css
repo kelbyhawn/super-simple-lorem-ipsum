@@ -7,6 +7,8 @@ body {
   margin: 0 auto;
   padding: 3em 1em 0;
   max-width: 660px;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 h1 {
