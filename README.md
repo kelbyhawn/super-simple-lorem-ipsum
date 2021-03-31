@@ -4,8 +4,8 @@ A no-frills Lorem Ipsum resource.
 
 [supersimpleloremipsum.com](https://supersimpleloremipsum.com)
 
-## Technologies
+## Built with
 
 - HTML5
 - CSS3
-- Sass
+- [Sass] (https://sass-lang.com) - CSS with superpowers
