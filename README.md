@@ -1,6 +1,6 @@
 # Super Simple Lorem Ipsum
 
-A no-frills Lorem Ipsum resource.
+A no-frills Lorem Ipsum resource. Copy what you want without any hassle.
 
 [supersimpleloremipsum.com](https://supersimpleloremipsum.com)
 
