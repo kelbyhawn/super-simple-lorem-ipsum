@@ -12,5 +12,5 @@ A no-frills Lorem Ipsum resource.
 
 ## License 
 
-MIT - [View here](https://github.com/kelbyhawn/super-simple-lorem-ipsum/blob/master/LICENSE)
+MIT - [View license](https://github.com/kelbyhawn/super-simple-lorem-ipsum/blob/master/LICENSE)
 
