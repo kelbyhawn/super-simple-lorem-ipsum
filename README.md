@@ -8,4 +8,4 @@ A no-frills Lorem Ipsum resource.
 
 - HTML5
 - CSS3
-- [Sass] (https://sass-lang.com) - CSS with superpowers
+- [Sass](https://sass-lang.com) - CSS with superpowers
