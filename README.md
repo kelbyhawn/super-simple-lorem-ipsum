@@ -4,7 +4,7 @@ A no-frills Lorem Ipsum resource.
 
 [supersimpleloremipsum.com](https://supersimpleloremipsum.com)
 
-### Technologies
+## Technologies
 
 - HTML5
 - CSS3
