@@ -1,7 +1,7 @@
 $color: black
 $hover: color .2s ease-in-out
 
-=transition($property)
+@mixin transition($property)
   -webkit-transition: $property
   -ms-transition: $property
   transition: $property
@@ -32,7 +32,7 @@ p
 a
   color: rgba($color, .66) 
   text-decoration: none
-  +transition($hover)
+  @include transition($hover)
 
   &:hover
     color: red
