@@ -2,6 +2,8 @@
 
 A no-frills Lorem Ipsum resource. Copy what you need without any hassle.
 
+*Coming soon!* Dark Mode
+
 [supersimpleloremipsum.com](https://supersimpleloremipsum.com)
 
 ## Built with
