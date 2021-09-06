@@ -1,8 +1,29 @@
-import {getCopyright} from './copyright.js';
-import {toggleDarkMode} from './helpers.js';
-
-getCopyright();
-toggleDarkMode();
+// Add copyright year
+document.querySelector('#year').textContent = new Date().getFullYear();
 
 
+// Toggle dark and light modes
+const button = document.querySelector('button');
+const body = document.querySelector('body');
+const footer = document.querySelector('footer');
+const a = document.querySelector('footer a');
 
+// Adds .dark class to elements
+const addDarkClass = element => {
+element.classList.toggle('dark');
+}
+
+// Change modes on click
+button.addEventListener('click', () => {    
+	addDarkClass(body);
+	addDarkClass(footer);
+	addDarkClass(a);
+	addDarkClass(button);
+
+	// Change text on button
+	if(body.classList.contains('dark')){
+	  button.textContent = 'Light';
+	} else {
+	  button.textContent = 'Dark';
+	}
+})
