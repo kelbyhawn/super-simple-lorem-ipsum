@@ -16,6 +16,7 @@ body.dark {
 }
 
 button {
+  width: 68px;
   position: absolute;
   top: 1em;
   right: 1em;
@@ -30,8 +31,8 @@ button {
 }
 button:before {
   content: "☾";
-  margin-right: 5px;
-  margin-left: -1px;
+  margin-right: 7px;
+  margin-left: -3px;
 }
 button.dark {
   background-color: rgba(255, 255, 255, 0.9);
@@ -40,7 +41,8 @@ button.dark {
 button.dark:before {
   content: "☀";
   line-height: 0;
-  margin-left: -2px;
+  margin-right: 5px;
+  margin-left: -4px;
 }
 @-moz-document url-prefix() {
   button.dark:before {

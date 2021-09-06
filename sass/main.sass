@@ -26,6 +26,7 @@ body
     background: rgba($color-dark,.85)
 
 button
+  width: 68px
   position: absolute
   top: 1em
   right: 1em
@@ -40,8 +41,8 @@ button
 
   &:before  
       content: '☾'
-      margin-right: 5px
-      margin-left: -1px
+      margin-right: 7px
+      margin-left: -3px
   
   // Dark mode styles
   &.dark
@@ -51,7 +52,8 @@ button
     &:before  
       content: '☀'
       line-height: 0
-      margin-left: -2px
+      margin-right: 5px
+      margin-left: -4px      
 
       // sizing fix on Firefox
       @-moz-document url-prefix()
