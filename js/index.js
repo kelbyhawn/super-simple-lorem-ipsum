@@ -10,7 +10,7 @@ const a = document.querySelector('footer a');
 
 // Adds .dark class to elements
 const addDarkClass = element => {
-element.classList.toggle('dark');
+	element.classList.toggle('dark');
 }
 
 // Change modes on click
