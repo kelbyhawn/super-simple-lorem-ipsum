@@ -32,6 +32,7 @@ button {
 button:before {
   content: "☾";
   margin-right: 5px;
+  margin-left: -1px;
 }
 button.dark {
   background-color: white;
@@ -39,9 +40,13 @@ button.dark {
 }
 button.dark:before {
   content: "☀";
-  font-size: 16px;
   line-height: 0;
   margin-left: -2px;
+}
+@-moz-document url-prefix() {
+  button.dark:before {
+    font-size: 18px;
+  }
 }
 
 h1 {

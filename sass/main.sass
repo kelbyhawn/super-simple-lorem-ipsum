@@ -41,6 +41,7 @@ button
   &:before  
       content: '☾'
       margin-right: 5px
+      margin-left: -1px
   
   &.dark
     background-color: white
@@ -48,9 +49,12 @@ button
 
     &:before  
       content: '☀'
-      font-size: 16px
       line-height: 0
       margin-left: -2px
+
+      // sizing fix on Firefox
+      @-moz-document url-prefix()
+        font-size: 18px
 
 h1
   font-size: 2em
