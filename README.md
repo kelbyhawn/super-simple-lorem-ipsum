@@ -11,6 +11,7 @@ A no-frills Lorem Ipsum resource. Copy what you need without any hassle.
 - HTML5
 - CSS3
 - [Sass](https://sass-lang.com) - CSS with superpowers
+- JavaScript
 
 ## License 
 
