@@ -2,7 +2,9 @@
 document.querySelector('#year').textContent = new Date().getFullYear();
 
 
-// Toggle dark and light modes
+// Toggle dark and light modes ----------------
+
+// Elements involved
 const button = document.querySelector('button');
 const body = document.querySelector('body');
 const footer = document.querySelector('footer');
