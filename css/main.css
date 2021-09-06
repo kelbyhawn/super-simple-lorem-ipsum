@@ -20,7 +20,7 @@ button {
   position: absolute;
   top: 1em;
   right: 1em;
-  background: black;
+  background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.9);
   font-size: 0.75em;
   margin: 0;
@@ -36,7 +36,7 @@ button:before {
 }
 button.dark {
   background-color: rgba(255, 255, 255, 0.9);
-  color: black;
+  color: rgba(0, 0, 0, 0.9);
 }
 button.dark:before {
   content: "☀";
