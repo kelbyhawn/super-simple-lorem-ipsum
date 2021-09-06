@@ -10,19 +10,19 @@ const a = document.querySelector('footer a');
 
 // Adds .dark class to elements
 const addDarkClass = elements => {
-	elements.forEach(element => {
-		element.classList.toggle('dark');
-	})
+  elements.forEach(element => {
+    element.classList.toggle('dark');
+  })
 }
 
 // Change modes on click
 button.addEventListener('click', () => {    
-	addDarkClass([body,footer,a,button]);
+  addDarkClass([body,footer,a,button]);
 
-	// Change text on button
-	if(body.classList.contains('dark')){
-	  button.textContent = 'Light';
-	} else {
-	  button.textContent = 'Dark';
-	}
+  // Change text on button
+  if(body.classList.contains('dark')){
+    button.textContent = 'Light';
+  } else {
+    button.textContent = 'Dark';
+  }
 })
