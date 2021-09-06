@@ -2,7 +2,7 @@
 
 A no-frills Lorem Ipsum resource. Copy what you need without any hassle.
 
-*Coming soon!* Dark Mode
+**New! 🎉** Dark Mode
 
 [supersimpleloremipsum.com](https://supersimpleloremipsum.com)
 
