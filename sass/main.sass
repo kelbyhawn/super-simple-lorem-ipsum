@@ -9,6 +9,9 @@ $hover: color .2s ease-in-out
 
 //------------------------------------------
 
+*
+  @include transition($hover)
+
 body
   background: rgba($color-dark, .01)
   color: rgba($color-dark, .8)
@@ -76,7 +79,6 @@ footer
   a
     color: rgba($color-dark, .66) 
     text-decoration: none
-    @include transition($hover)
 
     &:hover
       color: red

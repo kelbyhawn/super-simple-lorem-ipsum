@@ -1,4 +1,10 @@
 @charset "UTF-8";
+* {
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
 body {
   background: rgba(0, 0, 0, 0.01);
   color: rgba(0, 0, 0, 0.8);
@@ -69,9 +75,6 @@ footer {
 footer a {
   color: rgba(0, 0, 0, 0.66);
   text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out;
-  -ms-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
 }
 footer a:hover {
   color: red;
