@@ -4,14 +4,14 @@
   --bg-color: #fafafa;
   --btn-text-color: #fafafa;
   --btn-bg-color: #303030;
-  --btn-icon: "☾ Dark";
+  --btn-content: "☾ Dark";
 }
 :root.dark {
   --text-color: #dadada;
   --bg-color: #252525;
   --btn-text-color: #303030;
   --btn-bg-color: #e7e7e7;
-  --btn-icon: "☀ Light";
+  --btn-content: "☀ Light";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +20,7 @@
     --bg-color: #252525;
     --btn-text-color: #303030;
     --btn-bg-color: #e7e7e7;
-    --btn-icon: "☀ Light";
+    --btn-content: "☀ Light";
   }
 
   :root.light {
@@ -28,7 +28,7 @@
     --bg-color: #fafafa;
     --btn-text-color: #fafafa;
     --btn-bg-color: #303030;
-    --btn-icon: "☾ Dark";
+    --btn-content: "☾ Dark";
   }
 }
 body {
@@ -59,7 +59,7 @@ button {
   cursor: pointer;
 }
 button:before {
-  content: var(--btn-icon);
+  content: var(--btn-content);
   line-height: 1;
 }
 

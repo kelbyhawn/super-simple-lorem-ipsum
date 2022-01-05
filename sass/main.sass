@@ -13,7 +13,7 @@ $hover: color .2s ease-in-out
   --bg-color: #fafafa
   --btn-text-color: #fafafa
   --btn-bg-color: #303030
-  --btn-icon: "☾ Dark"
+  --btn-content: "☾ Dark"
 
 // dark theme colors
 @mixin dark-theme
@@ -21,7 +21,7 @@ $hover: color .2s ease-in-out
   --bg-color: #252525
   --btn-text-color: #303030
   --btn-bg-color: #e7e7e7
-  --btn-icon: "☀ Light"
+  --btn-content: "☀ Light"
 
 :root
   @include light-theme
@@ -65,7 +65,7 @@ button
   cursor: pointer
 
   &:before  
-    content: var(--btn-icon) 
+    content: var(--btn-content) 
     line-height: 1  
 
 h1
