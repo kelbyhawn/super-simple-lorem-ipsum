@@ -1,5 +1,5 @@
-$color-dark: black
-$color-light: rgba(255,255,255,.9)
+
+// Variables & mixins
 $hover: color .2s ease-in-out
 
 @mixin transition($property)
@@ -7,14 +7,40 @@ $hover: color .2s ease-in-out
   -ms-transition: $property
   transition: $property
 
-//------------------------------------------
+// light theme colors
+@mixin light-theme
+  --text-color: #272727
+  --bg-color: #fafafa
+  --btn-text-color: #fafafa
+  --btn-bg-color: #272727
+  --btn-icon: "☾ Dark"
 
-*
-  @include transition($hover)
+// dark theme colors
+@mixin dark-theme
+  --text-color: #ebebeb
+  --bg-color: #272727
+  --btn-text-color: #272727
+  --btn-bg-color: #ebebeb
+  --btn-icon: "☀ Light"
 
+:root
+  @include light-theme
+  
+  &.dark
+    @include dark-theme
+    
+@media (prefers-color-scheme: dark)
+  :root
+    @include dark-theme
+
+  :root.light
+    @include light-theme
+
+
+// Styles
 body
-  background: rgba($color-dark, .01)
-  color: rgba($color-dark, .8)
+  background: var(--bg-color)
+  color: var(--text-color)
   font-family: sans-serif
   font-size: 16px
   line-height: 1.4
@@ -24,43 +50,23 @@ body
   -webkit-text-size-adjust: none
   text-size-adjust: none
 
-  // Dark mode bg color
-  &.dark
-    background: rgba($color-dark,.85)
-
 button
   width: 68px
   position: absolute
   top: 1em
   right: 1em
-  background: rgba($color-dark, .9)
-  color: $color-light
+  background: var(--btn-bg-color)
+  color: var(--btn-text-color)
   font-size: .75em
   margin: 0
-  padding: .5em 1em
+  padding: .5em
   border: none
   border-radius: 4px
   cursor: pointer
 
   &:before  
-      content: '☾'
-      margin-right: 7px
-      margin-left: -3px
-  
-  // Dark mode styles
-  &.dark
-    background-color: $color-light
-    color: rgba($color-dark, .9)
-
-    &:before  
-      content: '☀'
-      line-height: 0
-      margin-right: 5px
-      margin-left: -4px      
-
-      // sizing fix on Firefox
-      @-moz-document url-prefix()
-        font-size: 18px
+    content: var(--btn-icon) 
+    line-height: 1  
 
 h1
   font-size: 2em
@@ -73,16 +79,13 @@ p
 
 footer
   font-size: .75em  
-  color: rgba($color-dark, .66)
+  color: var(--text-color)
   margin-top: 4em
 
   a
-    color: rgba($color-dark, .66) 
+    color: var(--text-color) 
     text-decoration: none
+    @include transition($hover)
 
     &:hover
       color: red
-
-// Dark mode font color
-.dark 
-  color: $color-light
