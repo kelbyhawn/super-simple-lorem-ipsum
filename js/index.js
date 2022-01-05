@@ -1,30 +1,16 @@
-// Add copyright year
+// Add copyright year ----------------
 document.querySelector('#year').textContent = new Date().getFullYear();
 
 
 // Toggle dark and light modes ----------------
+const prefersDarkTheme = window.matchMedia("(prefers-color-scheme: dark)");
+const button = document.querySelector("button");
 
-// Elements involved
-const button = document.querySelector('button');
-const body = document.querySelector('body');
-const footer = document.querySelector('footer');
-const a = document.querySelector('footer a');
-
-// Adds .dark class to elements
-const addDarkClass = elements => {
-  elements.forEach(element => {
-    element.classList.toggle('dark');
-  })
-}
-
-// Change modes on click
-button.addEventListener('click', () => {    
-  addDarkClass([body,footer,a,button]);
-
-  // Change text on button
-  if(body.classList.contains('dark')){
-    button.textContent = 'Light';
+// Change mode on click
+button.addEventListener("click", () => { 
+  if (prefersDarkTheme.matches ) {
+    document.documentElement.classList.toggle("light");
   } else {
-    button.textContent = 'Dark';
+    document.documentElement.classList.toggle("dark");
   }
 })
