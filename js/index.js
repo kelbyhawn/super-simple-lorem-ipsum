@@ -8,7 +8,7 @@ const button = document.querySelector("button");
 
 // Change mode on click
 button.addEventListener("click", () => { 
-  if (prefersDarkTheme.matches ) {
+  if (prefersDarkTheme.matches) {
     document.documentElement.classList.toggle("light");
   } else {
     document.documentElement.classList.toggle("dark");
