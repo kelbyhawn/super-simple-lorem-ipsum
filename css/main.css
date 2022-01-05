@@ -1,33 +1,33 @@
 @charset "UTF-8";
 :root {
-  --text-color: #272727;
+  --text-color: #3e3e3e;
   --bg-color: #fafafa;
   --btn-text-color: #fafafa;
-  --btn-bg-color: #272727;
+  --btn-bg-color: #303030;
   --btn-icon: "☾ Dark";
 }
 :root.dark {
-  --text-color: #ebebeb;
-  --bg-color: #272727;
-  --btn-text-color: #272727;
-  --btn-bg-color: #ebebeb;
+  --text-color: #dadada;
+  --bg-color: #252525;
+  --btn-text-color: #303030;
+  --btn-bg-color: #e7e7e7;
   --btn-icon: "☀ Light";
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: #ebebeb;
-    --bg-color: #272727;
-    --btn-text-color: #272727;
-    --btn-bg-color: #ebebeb;
+    --text-color: #dadada;
+    --bg-color: #252525;
+    --btn-text-color: #303030;
+    --btn-bg-color: #e7e7e7;
     --btn-icon: "☀ Light";
   }
 
   :root.light {
-    --text-color: #272727;
+    --text-color: #3e3e3e;
     --bg-color: #fafafa;
     --btn-text-color: #fafafa;
-    --btn-bg-color: #272727;
+    --btn-bg-color: #303030;
     --btn-icon: "☾ Dark";
   }
 }
