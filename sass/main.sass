@@ -13,7 +13,8 @@ $hover: color .2s ease-in-out
   --bg-color: #fafafa
   --btn-text-color: #fafafa
   --btn-bg-color: #303030
-  --btn-content: "☾ Dark"
+  --btn-content: "Dark"
+  --btn-icon: url("/images/icon-moon.svg") 
 
 // dark theme colors
 @mixin dark-theme
@@ -21,7 +22,8 @@ $hover: color .2s ease-in-out
   --bg-color: #252525
   --btn-text-color: #303030
   --btn-bg-color: #e7e7e7
-  --btn-content: "☀ Light"
+  --btn-content: "Light"
+  --btn-icon: url("/images/icon-sun.svg")
 
 :root
   @include light-theme
@@ -64,9 +66,15 @@ button
   border-radius: 4px
   cursor: pointer
 
-  &:before  
-    content: var(--btn-content) 
-    line-height: 1  
+  &:before 
+    content: var(--btn-icon) 
+    margin-right: 6px
+    line-height: 1
+    display: inline-block
+    vertical-align: middle
+
+  &:after
+    content: var(--btn-content)
 
 h1
   font-size: 2em
