@@ -2,11 +2,11 @@
 document.querySelector('#year').textContent = new Date().getFullYear();
 
 
-// Toggle dark and light modes ----------------
+// Toggle dark or light theme ----------------
 const prefersDarkTheme = window.matchMedia("(prefers-color-scheme: dark)");
-const button = document.querySelector("button");
+const button = document.querySelector("#btn-theme");
 
-// Change mode on click
+// Change theme on click
 button.addEventListener("click", () => { 
   if (prefersDarkTheme.matches) {
     document.documentElement.classList.toggle("light");
