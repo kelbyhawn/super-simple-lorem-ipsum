@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+// Dependencies
+import { useEffect } from "react";
+
+// Components
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+import Button from "./components/Button";
+
+// Assets
+import "./App.sass";
 
 function App() {
+
+  useEffect(() => {
+    // Toggle dark or light theme 
+    const prefersDarkTheme = window.matchMedia("(prefers-color-scheme: dark)");
+    const button = document.querySelector("#btn-theme");
+
+    // Change theme on click
+    button.addEventListener("click", () => { 
+      if (prefersDarkTheme.matches) {
+        document.documentElement.classList.toggle("light");
+      } else {
+        document.documentElement.classList.toggle("dark");
+      }
+    })
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Main />        
+    <Footer />
+    <Button />
+    </>
   );
 }
 
