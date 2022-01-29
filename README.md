@@ -4,5 +4,15 @@
 
 A no-frills Lorem Ipsum resource. Copy what you need without any hassle.
 
-**New! 🎉** Auto light/dark mode
+**New! 🎉** Complete re-write • Auto light/dark mode
 
+## Dependencies
+
+- [React](https://reactjs.org/) - A declarative, efficient, and flexible JavaScript library for building user interfaces. 
+- [Create React App](https://create-react-app.dev) - Set up a modern web app by running one command. 
+- [Sass](https://www.npmjs.com/package/sass) - CSS with superpowers.
+
+
+## License 
+
+MIT - [View license](https://github.com/kelbyhawn/super-simple-lorem-ipsum/blob/main/LICENSE)
