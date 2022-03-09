@@ -28,9 +28,9 @@ function App() {
 
   return (
     <>
-    <Main />        
-    <Footer />
-    <Button />
+      <Main />        
+      <Footer />
+      <Button />
     </>
   );
 }
