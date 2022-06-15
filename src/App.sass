@@ -14,7 +14,7 @@ $hover: color .2s ease-in-out
   --btn-text-color: #fafafa
   --btn-bg-color: #3e3e3e
   --btn-content: "Dark"
-  --btn-icon: url("/assets/icon-moon.svg") 
+  --btn-icon: url("/assets/icon-moon.svg")
 
 // dark theme colors
 @mixin dark-theme
@@ -27,10 +27,10 @@ $hover: color .2s ease-in-out
 
 :root
   @include light-theme
-  
+
   &.dark
     @include dark-theme
-    
+
 @media (prefers-color-scheme: dark)
   :root
     @include dark-theme
@@ -66,8 +66,8 @@ button
   border-radius: 4px
   cursor: pointer
 
-  &:before 
-    content: var(--btn-icon) 
+  &:before
+    content: var(--btn-icon)
     margin-right: 6px
     line-height: 1
     display: inline-block
@@ -76,7 +76,7 @@ button
   &:after
     content: var(--btn-content)
     display: inline-block
-    margin-top: 1px
+    margin-top: 2px
 
 h1
   font-size: 2em
@@ -84,16 +84,16 @@ h1
   line-height: 1.1
   margin: 0 auto 1em
 
-p 
+p
   margin-bottom: 1.5em
 
 footer
-  font-size: .75em  
+  font-size: .75em
   color: var(--text-color)
   margin-top: 4em
 
   a
-    color: var(--text-color) 
+    color: var(--text-color)
     text-decoration: none
     @include transition($hover)
 
