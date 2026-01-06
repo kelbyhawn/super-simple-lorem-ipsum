@@ -10,25 +10,30 @@ import Button from "./components/Button";
 import "./App.sass";
 
 function App() {
-
   useEffect(() => {
-    // Toggle dark or light theme 
+    // Toggle dark or light theme
     const prefersDarkTheme = window.matchMedia("(prefers-color-scheme: dark)");
     const button = document.querySelector("#btn-theme");
 
     // Change theme on click
-    button.addEventListener("click", () => { 
+    const handleClick = () => {
       if (prefersDarkTheme.matches) {
         document.documentElement.classList.toggle("light");
       } else {
         document.documentElement.classList.toggle("dark");
       }
-    })
-  })
+    };
+
+    button.addEventListener("click", handleClick);
+
+    return () => {
+      button.removeEventListener("click", handleClick);
+    };
+  }, []);
 
   return (
     <>
-      <Main />        
+      <Main />
       <Footer />
       <Button />
     </>
