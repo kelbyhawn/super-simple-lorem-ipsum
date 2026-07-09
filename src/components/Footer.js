@@ -3,7 +3,12 @@ export default function Footer() {
 
   return (
     <footer>
-      <p>©{year} Super Simple Lorem Ipsum • Made by <a href="https://kelbyhawn.com" target="_blank" rel="noreferrer">Kelby Hawn</a></p>
+      <p>
+        ©{year} Super Simple Lorem Ipsum • Made by{" "}
+        <a href="https://kelbyhawn.com" target="_blank" rel="noreferrer">
+          Kelby Hawn
+        </a>
+      </p>
     </footer>
-  )
+  );
 }
