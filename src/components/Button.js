@@ -16,7 +16,7 @@ export default function Button() {
     >
       <Image
         src={isLightTheme ? iconMoon : iconSun}
-        alt={isLightTheme ? "Moon icon" : "Sun icon"}
+        alt=""
         width={12}
         height={12}
       />
