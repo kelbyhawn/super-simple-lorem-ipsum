@@ -9,7 +9,7 @@ A no-frills Lorem Ipsum resource. Copy what you need without any hassle.
 ## Dependencies
 
 - [React](https://reactjs.org/) - A declarative, efficient, and flexible JavaScript library for building user interfaces. 
-- [Create React App](https://create-react-app.dev) - Set up a modern web app by running one command. 
+- [Next.js](https://nextjs.org/) - The React framework for the web.
 - [Sass](https://www.npmjs.com/package/sass) - CSS with superpowers.
 
 
