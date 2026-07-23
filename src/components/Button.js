@@ -1,4 +1,7 @@
+// Components
 import Image from "next/image";
+
+// Assets
 import iconMoon from "../assets/icon-moon.svg";
 import iconSun from "../assets/icon-sun.svg";
 
