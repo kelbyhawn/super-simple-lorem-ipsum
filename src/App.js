@@ -6,9 +6,6 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import Button from "./components/Button";
 
-// Assets
-import "./App.sass";
-
 function App() {
   useEffect(() => {
     // Toggle dark or light theme
