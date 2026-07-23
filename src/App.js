@@ -1,41 +1,32 @@
 // Dependencies
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // Components
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import Button from "./components/Button";
 
-// Assets
-import "./App.sass";
-
 function App() {
+  const [theme, setTheme] = useState(
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light",
+  );
+
   useEffect(() => {
-    // Toggle dark or light theme
-    const prefersDarkTheme = window.matchMedia("(prefers-color-scheme: dark)");
-    const button = document.querySelector("#btn-theme");
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(theme);
+  }, [theme]);
 
-    // Change theme on click
-    const handleClick = () => {
-      if (prefersDarkTheme.matches) {
-        document.documentElement.classList.toggle("light");
-      } else {
-        document.documentElement.classList.toggle("dark");
-      }
-    };
-
-    button.addEventListener("click", handleClick);
-
-    return () => {
-      button.removeEventListener("click", handleClick);
-    };
-  }, []);
+  const handleClick = () => {
+    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+  };
 
   return (
     <>
+      <Button theme={theme} onClick={handleClick} />
       <Main />
       <Footer />
-      <Button />
     </>
   );
 }

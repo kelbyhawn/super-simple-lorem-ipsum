@@ -15,8 +15,6 @@ $font: "Inter", sans-serif
   --bg-color: #ffffff
   --btn-text-color: #ffffff
   --btn-bg-color: #252525
-  --btn-content: "Dark"
-  --btn-icon: url("/assets/icon-moon.svg")
 
 // dark theme colors
 @mixin dark-theme
@@ -24,8 +22,6 @@ $font: "Inter", sans-serif
   --bg-color: #252525
   --btn-text-color: #252525
   --btn-bg-color: #e7e7e7
-  --btn-content: "Light"
-  --btn-icon: url("/assets/icon-sun.svg")
 
 :root
   @include light-theme
@@ -56,31 +52,21 @@ body
   text-size-adjust: none
 
 button
-  width: 68px
+  width: 62px
   position: absolute
   top: 1em
   right: 1em
   background: var(--btn-bg-color)
   color: var(--btn-text-color)
-  font-size: .775em
-  margin: 0
-  padding: .5em
+  font-size: .75em
+  padding-block: .5em
   border: none
   border-radius: 4px
   cursor: pointer
-
-  &:before
-    content: var(--btn-icon)
-    margin-right: 6px
-    line-height: 1
-    display: inline-block
-    vertical-align: middle
-
-  &:after
-    content: var(--btn-content)
-    display: inline-block
-    margin-top: 2px
-    font-family: $font
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: .5em
 
 h1
   font-size: 2em
