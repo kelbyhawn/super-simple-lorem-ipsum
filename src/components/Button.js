@@ -4,11 +4,7 @@ import iconSun from "../assets/icon-sun.svg";
 
 export default function Button({ theme, onClick }) {
   return (
-    <button
-      id="btn-theme"
-      aria-label="Change to light or dark mode"
-      onClick={onClick}
-    >
+    <button aria-label="Change theme" onClick={onClick}>
       <Image
         src={theme === "light" ? iconMoon : iconSun}
         alt=""
