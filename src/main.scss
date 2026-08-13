@@ -1,0 +1,103 @@
+// Variables & mixins
+$hover: color 0.2s ease-in-out;
+$font: "Inter", sans-serif;
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -ms-transition: $property;
+  transition: $property;
+}
+
+// light theme colors
+@mixin light-theme {
+  --text-color: #252525;
+  --bg-color: #ffffff;
+  --btn-text-color: #ffffff;
+  --btn-bg-color: #252525;
+}
+
+// dark theme colors
+@mixin dark-theme {
+  --text-color: #e7e7e7;
+  --bg-color: #252525;
+  --btn-text-color: #252525;
+  --btn-bg-color: #e7e7e7;
+}
+
+:root {
+  @include light-theme;
+
+  &.dark {
+    @include dark-theme;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark-theme;
+  }
+
+  :root.light {
+    @include light-theme;
+  }
+}
+
+// Styles
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: $font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 4em 1em 2em;
+  max-width: 650px;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+button {
+  width: 62px;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  font-size: 0.75em;
+  padding-block: 0.5em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 auto 1em;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+footer {
+  font-size: 0.875em;
+  color: var(--text-color);
+  margin-top: 4em;
+
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    @include transition($hover);
+
+    &:hover {
+      color: red;
+    }
+  }
+}
