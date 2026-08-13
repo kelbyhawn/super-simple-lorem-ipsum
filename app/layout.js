@@ -1,6 +1,6 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Inter } from "next/font/google";
-import "../src/App.sass";
+import "../src/main.scss";
 
 const inter = Inter({
   weight: ["400", "700"],
