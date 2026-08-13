@@ -6,7 +6,7 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import Button from "./components/Button";
 
-function App() {
+function Container() {
   const [theme, setTheme] = useState(
     window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
@@ -31,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default Container;
